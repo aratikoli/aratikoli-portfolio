@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="css/owl.theme.min.css">
         <link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- google font -->
         <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
@@ -23,13 +24,16 @@
         <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+        
+       
     </head>
     <body>
         <div class="content-block" id="header">
             <div id="overlay-1">
                 <header id="site-header" class="clearfix">
                     <div class="pull-left">
-                        <h1><a href="#">Developer</a></h1>
+                        <h1><a href="#">Arati's Portfolio</a></h1>
+
                     </div>
                     <div class="pull-right">
                         <nav class="navbar site-nav" role="navigation">
@@ -40,26 +44,45 @@
                                 </button>
                             </div>
 
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            
+                            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
                                     <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a></li>
                                     <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
                                 </ul>
-                            </div>  <!-- /.navbar-collapse -->
-                        </nav>
+                            </div> -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <nav>
+                                
+                                <div class="right">
+                                  <ul>
+                                    <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
+                                    <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a></li>
+                                    <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
+    
+                                  </ul>
+                                </div>
+                              </nav>
+                              </div>
+                            
+            
+                       
                     </div>
                 </header>	<!-- site-header -->
                 
                 <div class="middle text-center clearfix">
                     <div class="container">
-                        <h1 class="pro-name">Web <!-- <span style="color: #71b644;" > -->Developer<!-- </span> --></h1>
-                        <p class="tagline">Bring your dreams to life</p>
-                        <div class="skills">
+                        <div class="tagline">
+                        Hi, My name is <span class="purple">Arati</span>
+                        <div>and I am a passionate</div>
+                        <span id="element"></span>
 
-                        </div>  <!-- skills -->
-                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Hire Me</a>
+                        </div>
+                        <div class="skills">
+                            </div>
+
+                         <!-- skills -->
                     </div>  <!-- container -->
                 </div>  <!-- middle -->
                 
@@ -74,79 +97,107 @@
                 <h1>Latest Works</h1>
                 <!-- <p>Take a look at some of my recent products</p> -->
             </header>
-
-            <div class="isotope portfolio-items">
-                <div class="element-item grid">
-                    <div class="effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/linkedin.jpg">
-                        <figcaption>
-                            <p class="icon-links">
-                                <a href="https://www.linkedin.com/in/arati-koli"><i class="fa fa-linkedin"></i></a>
-                                
-                                
-                            </p>
-                        </figcaption>
+            <div class="container mt-5">
+                <div class="row" >
+                    <div class="col-md-3">
+                        <a href="https://www.linkedin.com/in/arati-koli" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/linkedin.jpg" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">LinkedIn Profile</h5>
+                                    <p class="card-text">This is my Linked in profile contains all the project work and previouswork experience</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://github.com/aratikoli" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/github.avif" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Github</h5>
+                                    <p class="card-text">Github repository contains all my previous development work</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://ng-new-recipe-book-ed788.web.app/" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/webdevelopment.png" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Recipe Book App</h5>
+                                    <p class="card-text">
+                    
+                                        Developed the application using Angular 12, CSS, Bootstrap, Java Script and HTML5.
+                                    
+                                        Implemented Authentication service using Firebase Rest API</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://todolist-45acc.web.app/" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/todo.jpg" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">To-Do List</h5>
+                                    <p class="card-text">The Todo List app uses Angular for dynamic features and CRUD operations. It employs Firebase Authentication for secure user access and Realtime Database for seamless data storage and retrieval</p>
+                              </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work4.jpg">
-                        <figcaption>
-                            <p class="icon-links">
-                                <a href="https://ng-new-recipe-book-ed788.web.app/"><i class="fa fa-globe" aria-hidden="true"></i>
-                                </a>
-                                <a href="https://todolist-45acc.web.app/"><i class="fa fa-globe" aria-hidden="true"></i>
-                                </a>
-                                
-                            </p>
-                        </figcaption>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="https://www.udemy.com/certificate/UC-081af9a5-2921-4e69-8438-8da90de7138d/" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/certifications.png" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Angular Development Bootcamp 2024 edition</h5>
+                                    <p class="card-text">Reskilled with latest Angular Development Course with latest technologies</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.udemy.com/certificate/UC-e7c62438-5b4c-47aa-95da-b013ccf49d14/" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/certifications.png" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Agile Crash Course, Agile Project Management</h5>
+                                    <p class="card-text">Completed Agile Project management Course </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/IEEE presentation.jpg" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/academic.png" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">International Paper Publication</h5>
+                                    <p class="card-text">Published  international research papers on NoSQL DB and big data analytics (IEEE explorer)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="img/ME-Topper.jpg" class="text-decoration-none">
+                            <div class="card">
+                                <img src="img/win1.jpg" class="card-img-top" alt="LinkedIn Profile Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Masters of Engineering Pune University 1st Rank</h5>
+                                    <p class="card-text"> Achieved the first rank in Pune University for Master of Engineering degree, showcasing my dedication and proficiency </p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/Github.png">
-                        <figcaption>
-                            <p class="icon-links">
-                                <a href="https://github.com/aratikoli"><i class="fa fa-github"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/certifications.png">
-                        <figcaption>
-                            <p class="icon-links">
-                                <a href="https://www.udemy.com/certificate/UC-081af9a5-2921-4e69-8438-8da90de7138d/"><i class="fa fa-certificate" aria-hidden="true"></i>
-                                </a>
-                                <a href="https://www.udemy.com/certificate/UC-e7c62438-5b4c-47aa-95da-b013ccf49d14/"><i class="fa fa-certificate" aria-hidden="true"></i>
-                                </a>
-                                
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
+            </div>
     
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        </a><img class="img-responsive" alt="Portfolio" src="img/academic.png">
-                        <figcaption>
-                            <p class="icon-links">
-                                <a href="img/ME-Topper.jpg"><i class="fa fa-trophy" aria-hidden="true"></i>
-                                </a>
-                                <a href="img/IEEE presentation.jpg"><i class="fa fa-trophy" aria-hidden="true"></i>
-                                </a>
-    
-                                
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                
-                
-            </div>	<!-- isotope portfolio-items -->
-        </div>  <!-- content-block -->
 
         
 
@@ -212,18 +263,6 @@
             </div>	<!-- overlay-3 -->
         </div>	<!-- content-block -->
 
-        <footer id="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">&copy; 2014 Developer</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="designed-by">Designed By <a href="http://themewagon.com/" target="_blank">ThemeWagon</a></div>
-                    </div>
-                </div>
-            </div>
-        </footer>	<!-- site-footer -->
 
 
         <!-- js -->
@@ -263,6 +302,13 @@
 				})
 			});
         </script>
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Developer", "Web Developer", "Angular Developer"],
+        typeSpeed: 50,
+      });
+    </script>
 	</body>
 </html>
